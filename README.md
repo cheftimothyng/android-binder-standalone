@@ -27,6 +27,9 @@ python tools/sidl/sidl.py xxx.sidl
 ### Make a test environment
 See [Make a test environment](tools/aarch64_qemu/make_a_test_environment.md)
 
+Note: this environment doesn`t include 32-bit libs, so please use static link.
+Further more, the shell will not give an error like exec file not found instand of so not found.
+
 
 
 ### Code From:
@@ -37,7 +40,6 @@ https://android.googlesource.com/android-5.1.0_r1
 
 kernel module
 https://android.googlesource.com/kernel/common/+/android-3.10 e48e8c45
-
 
 ### Run on 64 bit kernel
 Simply use latest kernel driver in AOSP and force define BINDER_IPC_32BIT.
