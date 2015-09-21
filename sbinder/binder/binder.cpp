@@ -144,6 +144,7 @@ void BBinder::attachObject(
     if (!e) {
         e = new Extras;
         //lihui: FixMe, this code will failed on 64bit process
+        //it`s only used in android_util_Binder.cpp, the jni code
         if (android_atomic_cmpxchg(0, reinterpret_cast<int32_t>(e),
                 reinterpret_cast<volatile int32_t*>(&mExtras)) != 0) {
             delete e;
