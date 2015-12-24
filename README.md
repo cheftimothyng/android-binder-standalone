@@ -42,8 +42,7 @@ kernel module
 https://android.googlesource.com/kernel/common/+/android-3.10 e48e8c45
 
 ### Run on 64 bit kernel
-Simply use latest kernel driver in AOSP and force define BINDER_IPC_32BIT.
-But app process could only be 32 bits, to support both 32bit and 64bit app process, use branch android-5.1.0_r1
+Support communicate between both 32bit and 64bit app process now.
 
 
 ### TODO List:
